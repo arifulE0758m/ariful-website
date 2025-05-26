@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <title>Ariful - Portfolio</title>
+</head>
+<body>
+<div class="body-portfolio">
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                <a href="index.html">Ariful <span>Islam</span></a>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#projects">Projects</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="#">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#">Service</a>
+                <a href="#">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="portfolio-main" id="projects">
+        <div class="section-header">
+            <h2 data-aos="fade-up">My <span>Projects</span></h2>
+            <p data-aos="fade-up" data-aos-delay="100">Some of my recent works</p>
+        </div>
+
+        <div class="portfolio-container">
+            <!-- Project 1 -->
+            <div class="portfolio-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="portfolio-img">
+                    <img src="project1.jpg" alt="E-Commerce Website">
+                    <div class="portfolio-overlay">
+                        <h3>E-Commerce Website</h3>
+                        <p>Fullstack e-commerce solution with React & Node.js</p>
+                        <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-info">
+                    <h3>E-Commerce Website</h3>
+                    <div class="portfolio-tags">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="portfolio-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="portfolio-img">
+                    <img src="project2.jpg" alt="Portfolio Template">
+                    <div class="portfolio-overlay">
+                        <h3>Portfolio Template</h3>
+                        <p>Responsive portfolio template for creatives</p>
+                        <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-info">
+                    <h3>Portfolio Template</h3>
+                    <div class="portfolio-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+</div>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({offset:0});
+</script>
+<script src="script.js"></script>
+<script src="portfolio.js"></script>
+</body>
+</html>
