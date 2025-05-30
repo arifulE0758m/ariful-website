@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,37 +13,37 @@
     <nav>
         <div class="nav-container">
             <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
-                Ariful <span>Islam</span>
+                <a href="index.html">Ariful <span>Islam</span></a>
             </div>
             <div class="links">
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#home">Home</a></div>
                 <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="about.html">About</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="skills.html">Skills</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="service.html">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="portfolio.html">Portfolio</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="services.html">Services</a></div>
                 <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="contact.html">Contact</a></div>
             </div>
             <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
         </div>
         <div class="dropdown">
             <div class="links">
-                <a href="indexm.html">Home</a>
+                <a href="index.html">Home</a>
                 <a href="about.html">About</a>
-                <a href="#">Skills</a>
-                <a href="service.html">Service</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="services.html">Services</a>
                 <a href="contact.html">Contact</a>
                 <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
             </div>
         </div>
     </nav>
-    <section>
+    <section id="home">
         <div class="main-container">
             <div class="image-container" data-aos="zoom-out" data-aos-duration="3000">
                 <img src="./img/about.png" alt="Ariful Islam" class="profile-image">
             </div>
             <div class="content">
                 <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey I'm <span>Arif UL</span></h1>
-                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">I'm a <span class="typewriter-text"></span><label for="">|</label></div>
-                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quasi commodi quia rerum, iste corporis expedita in excepturi nesciunt repellendus quisquam amet provident ad mollitia debitis odit voluptatem necessitatibus tempora.</p>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">I'm a <span class="typewriter-text"></span></div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">Passionate web developer with expertise in creating modern, responsive websites. Specializing in front-end development with React and Vue, and back-end with Node.js and Express.</p>
                 <div class="social-links">
                     <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
                     <a href="https://www.facebook.com/moh.ariphula.isalama.55982" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-facebook"></i></a>
@@ -52,16 +51,75 @@
                     <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
                 <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
-                      <a href="portfolio.html"><button class="btn-hire">View Portfolio</button></a>
+                    <a href="contact.html"><button class="btn-hire">Hire me</button></a>
                 </div>
             </div>
         </div>
     </section>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-aos="fade-up">My <span>Skills</span></h2>
+                <p data-aos="fade-up" data-aos-delay="100">Technologies I work with</p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                    <p>Semantic markup, accessibility, and modern HTML features</p>
+                </div>
+                
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                    <p>Flexbox, Grid, animations, and responsive design</p>
+                </div>
+                
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <p>ES6+, DOM manipulation, and modern JS patterns</p>
+                </div>
+                
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
+                    <i class="fab fa-react"></i>
+                    <h3>React</h3>
+                    <p>Components, hooks, state management, and React Router</p>
+                </div>
+                
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="600">
+                    <i class="fab fa-node-js"></i>
+                    <h3>Node.js</h3>
+                    <p>Express, REST APIs, authentication, and database integration</p>
+                </div>
+                
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="700">
+                    <i class="fas fa-database"></i>
+                    <h3>MongoDB</h3>
+                    <p>Schema design, queries, aggregation, and Mongoose ODM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="container" data-aos="fade-up">
+            <h2>Ready to Start Your Project?</h2>
+            <p>Let's work together to create something amazing</p>
+            <a href="contact.html" class="cta-btn">Get in Touch</a>
+        </div>
+    </section>
 </div>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({offset:0});
-    </script>
-    <script src="script.js"></script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({offset:0});
+</script>
+<script src="script.js"></script>
 </body>
 </html>
+
