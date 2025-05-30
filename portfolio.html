@@ -19,80 +19,205 @@
             <div class="links">
                 <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
                 <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="about.html">About</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#projects">Projects</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#">Services</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#">Contact</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="portfolio.html">Portfolio</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="services.html">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="contact.html">Contact</a></div>
             </div>
             <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
         </div>
         <div class="dropdown">
             <div class="links">
                 <a href="index.html">Home</a>
-                <a href="#">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#">Service</a>
-                <a href="#">Contact</a>
+                <a href="about.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
                 <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
             </div>
         </div>
     </nav>
 
-    <section class="portfolio-main" id="projects">
+    <section class="portfolio-main">
         <div class="section-header">
-            <h2 data-aos="fade-up">My <span>Projects</span></h2>
-            <p data-aos="fade-up" data-aos-delay="100">Some of my recent works</p>
+            <h1 data-aos="fade-up">My <span>Portfolio</span></h1>
+            <p data-aos="fade-up" data-aos-delay="100">Explore my recent projects and creative works</p>
+        </div>
+
+        <div class="portfolio-filter" data-aos="fade-up" data-aos-delay="150">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web Design</button>
+            <button class="filter-btn" data-filter="app">App Development</button>
+            <button class="filter-btn" data-filter="graphic">Graphic Design</button>
         </div>
 
         <div class="portfolio-container">
             <!-- Project 1 -->
-            <div class="portfolio-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="portfolio-item" data-aos="fade-up" data-aos-delay="200" data-category="web">
                 <div class="portfolio-img">
-                    <img src="project1.jpg" alt="E-Commerce Website">
+                    <img src="https://source.unsplash.com/random/600x400/?ecommerce" alt="E-Commerce Website">
                     <div class="portfolio-overlay">
-                        <h3>E-Commerce Website</h3>
-                        <p>Fullstack e-commerce solution with React & Node.js</p>
-                        <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                        <div class="overlay-content">
+                            <h3>E-Commerce Platform</h3>
+                            <p>Fullstack e-commerce solution with React & Node.js</p>
+                            <div class="portfolio-actions">
+                                <a href="#" class="portfolio-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="portfolio-link" title="View Code"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="portfolio-info">
-                    <h3>E-Commerce Website</h3>
+                    <h3>E-Commerce Platform</h3>
+                    <p>Online store with payment integration and admin dashboard</p>
                     <div class="portfolio-tags">
                         <span>React</span>
                         <span>Node.js</span>
                         <span>MongoDB</span>
+                        <span>Stripe API</span>
                     </div>
                 </div>
             </div>
 
             <!-- Project 2 -->
-            <div class="portfolio-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="portfolio-item" data-aos="fade-up" data-aos-delay="250" data-category="web">
                 <div class="portfolio-img">
-                    <img src="project2.jpg" alt="Portfolio Template">
+                    <img src="./img/Portfolio.jpg" alt="Portfolio Template">
                     <div class="portfolio-overlay">
-                        <h3>Portfolio Template</h3>
-                        <p>Responsive portfolio template for creatives</p>
-                        <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                        <div class="overlay-content">
+                            <h3>Portfolio Template</h3>
+                            <p>Responsive portfolio template for creatives</p>
+                            <div class="portfolio-actions">
+                                <a href="index.html" class="portfolio-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="portfolio-link" title="View Code"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="portfolio-info">
                     <h3>Portfolio Template</h3>
+                    <p>Modern and clean portfolio design with animations</p>
                     <div class="portfolio-tags">
                         <span>HTML5</span>
                         <span>CSS3</span>
                         <span>JavaScript</span>
+                        <span>GSAP</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Add more projects as needed -->
+            <!-- Project 3 -->
+            <div class="portfolio-item" data-aos="fade-up" data-aos-delay="300" data-category="app">
+                <div class="portfolio-img">
+                    <img src="https://source.unsplash.com/random/600x400/?mobileapp" alt="Fitness App">
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <h3>Fitness Tracker App</h3>
+                            <p>Mobile application for workout tracking</p>
+                            <div class="portfolio-actions">
+                                <a href="#" class="portfolio-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="portfolio-link" title="View Code"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-info">
+                    <h3>Fitness Tracker App</h3>
+                    <p>Cross-platform mobile app with workout plans</p>
+                    <div class="portfolio-tags">
+                        <span>React Native</span>
+                        <span>Firebase</span>
+                        <span>Redux</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="portfolio-item" data-aos="fade-up" data-aos-delay="350" data-category="graphic">
+                <div class="portfolio-img">
+                    <img src="https://source.unsplash.com/random/600x400/?branding" alt="Brand Identity">
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <h3>Brand Identity</h3>
+                            <p>Complete branding package for startup</p>
+                            <div class="portfolio-actions">
+                                <a href="#" class="portfolio-link" title="View Case Study"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-info">
+                    <h3>Brand Identity</h3>
+                    <p>Logo, business cards, and brand guidelines</p>
+                    <div class="portfolio-tags">
+                        <span>Illustrator</span>
+                        <span>Photoshop</span>
+                        <span>Branding</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="portfolio-item" data-aos="fade-up" data-aos-delay="400" data-category="web">
+                <div class="portfolio-img">
+                    <img src="https://source.unsplash.com/random/600x400/?dashboard" alt="Admin Dashboard">
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <h3>Admin Dashboard</h3>
+                            <p>Analytics dashboard for business management</p>
+                            <div class="portfolio-actions">
+                                <a href="#" class="portfolio-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="portfolio-link" title="View Code"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-info">
+                    <h3>Admin Dashboard</h3>
+                    <p>Data visualization and management system</p>
+                    <div class="portfolio-tags">
+                        <span>Vue.js</span>
+                        <span>Chart.js</span>
+                        <span>REST API</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="portfolio-item" data-aos="fade-up" data-aos-delay="450" data-category="app">
+                <div class="portfolio-img">
+                    <img src="https://source.unsplash.com/random/600x400/?weather" alt="Weather App">
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <h3>Weather Forecast App</h3>
+                            <p>Real-time weather information application</p>
+                            <div class="portfolio-actions">
+                                <a href="#" class="portfolio-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="portfolio-link" title="View Code"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-info">
+                    <h3>Weather Forecast App</h3>
+                    <p>Location-based weather forecasts with maps</p>
+                    <div class="portfolio-tags">
+                        <span>Flutter</span>
+                        <span>Dart</span>
+                        <span>Weather API</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio-cta" data-aos="fade-up" data-aos-delay="500">
+            <p>Have a project in mind? Let's work together!</p>
+            <a href="contact.html" class="btn-hire">Contact Me</a>
         </div>
     </section>
 </div>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-    AOS.init({offset:0});
-</script>
+
 <script src="script.js"></script>
 <script src="portfolio.js"></script>
 </body>
